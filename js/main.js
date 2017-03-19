@@ -1,3 +1,1 @@
-$(document).ready(function () {
-    $('#collapseButton').click();
-});
+$(document).ready(function () {});

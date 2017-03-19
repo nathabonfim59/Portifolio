@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
+@media screen and (min-width: 481px) {
+    #warningMessage {
+        padding-top: 35vh;
+        width: 100%;
+    }
+    #page-content {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 480px) {
+    /*    Disables the warning  */
+    #warningMessage {
+        display: none;
+    }
     #navbar-logo {
         background-color: black;
         height: 50px;
@@ -20,25 +34,19 @@
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 300;
     }
-    
-    
-    
     /*    navbar menu collaps   */
     #collapseButton {
         color: #fff;
         background-color: #000;
-        font-size: 25px;
+        font-size: 22px;
         border-radius: 50%;
-        height: 60px;
-        width: 60px;
-        
-/*        Fix the buttom on bottom of page*/
+        height: 50px;
+        width: 50px;
+        /*        Fix the buttom on bottom of page*/
         position: fixed;
         bottom: 10px;
         right: 10px;
     }
-    
-    
 }
 
 #collapse-navbar {
