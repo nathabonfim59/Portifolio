@@ -10,10 +10,7 @@ var isMobile;
 
 $(document).ready(function () {
     $(window).resize(function(){
-        isMobile = checkIfIsMobile($(window).width());
-        if(isMobile) {
-            $("#logo-text").text($(window).width());
-        }
+
     });
     
 });
