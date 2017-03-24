@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
 html,
 body {
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 @media screen and (min-width: 481px) {
@@ -102,13 +102,14 @@ body {
     }
 
     .closeMenu>a>i {
-        margin-top: 11px;
-        font-size: 22px;
-        color: red;
         font-size: 40px;
+        color: red;
         font-weight: lighter;
         display: inline-block;
         line-height: 1px;
+        bottom: 35px;
+        position: fixed;
+        right: 22px;
     }
 
     .closeMenu>a>i:before {
