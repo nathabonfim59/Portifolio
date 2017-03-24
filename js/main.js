@@ -9,8 +9,12 @@ function checkIfIsMobile (windowWidth) {
 var isMobile;
 
 $(document).ready(function () {
-    $(window).resize(function(){
-
-    });
-    
+    isMobile = checkIfIsMobile($(window).width());
+    if (isMobile) {
+        $("#collapseButton").click(function() {
+            $("#collapseButton a i").toggleClass("fa-navicon");
+            $("#collapseButton a i").toggleClass("fa-close");
+            $("#collapseButton").toggleClass("closeMenu");
+        });
+    } 
 });
