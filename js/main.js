@@ -12,8 +12,8 @@ $(document).ready(function () {
     isMobile = checkIfIsMobile($(window).width());
     if (isMobile) {
         $("#collapseButton").click(function() {
-            $("#collapseButton a i").toggleClass("fa-navicon");
-            $("#collapseButton a i").toggleClass("fa-close");
+            $("#collapseButton > a > i").toggleClass("fa-navicon");
+            $("#collapseButton > a > i").toggleClass("fa-close");
             $("#collapseButton").toggleClass("closeMenu");
         });
     } 

@@ -85,6 +85,13 @@ body {
         list-style: none;
         display: flex;
     }
+    .collapse-body>a {
+        color: #fff;
+    }
+    .collapse-body>a:focus,
+    .collapse-body>a:hover {
+        color: #777;
+    }
     .navbar-item span {
         display: none;
     }
@@ -98,21 +105,7 @@ body {
         padding-top: 11px;
     }
     .closeMenu>a>i {
-        display: none;
-    }
-
-    .closeMenu>a>i {
-        font-size: 40px;
         color: red;
-        font-weight: lighter;
-        display: inline-block;
-        line-height: 1px;
-        bottom: 35px;
-        position: fixed;
-        right: 22px;
     }
 
-    .closeMenu>a>i:before {
-        content: "×";
-    }
 }
