@@ -4,6 +4,11 @@ body {
     overflow-x: hidden;
 }
 
+/* A fix to boostrap navbar dotted in firefox */
+a:focus {
+    outline: none;
+}
+
 
 /*    General Class   */
 
