@@ -4,7 +4,23 @@ body {
     overflow-x: hidden;
 }
 
-@media screen and (min-width: 481px) {
+
+/*    General Class   */
+
+.logo {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+.logo>.thin {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+
+
+/*
+@media screen and (min-width: 992px) {
     #warningMessage {
         padding-top: 35vh;
         width: 100%;
@@ -12,14 +28,21 @@ body {
     #page-content {
         display: none;
     }
+    
+    
 }
+*/
 
-@media screen and (max-width: 480px) {
+/*UI for mobile devices and tablets */
+@media screen and (max-width: 768px) {
     .mobileDevice {
         float: right;
     }
     /*    Disables the warning  */
     #warningMessage {
+        display: none;
+    }
+    #desktop-navbar {
         display: none;
     }
     #navbar-logo {
@@ -32,15 +55,6 @@ body {
         display: table-cell;
         vertical-align: middle;
         text-align: center;
-    }
-    .logo {
-        color: white;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-weight: 400;
-    }
-    .logo>.thin {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-weight: 300;
     }
     /*    navbar menu collaps   */
     #collapseButton>a {
@@ -107,5 +121,35 @@ body {
     .closeMenu>a>i {
         color: red;
     }
+}
 
+/*UI for large screens*/
+@media screen and (min-width: 769px) {
+    #navbar {
+        display: none;
+    }
+    #warningMessage {
+        display: none;
+    }
+    
+    #desktop-navbar {
+        background-color: black;
+    }
+    
+    .logo {
+        color: white;
+        text-decoration: none;
+        font-size: 38px;
+        margin-left: 30px;
+        margin-bottom: 15px;
+    }
+    
+    .nav-menu {
+        margin-right: 40px;
+        text-transform: uppercase;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        margin-top: 3px; 
+    }
 }
