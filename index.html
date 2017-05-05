@@ -1,68 +1,194 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>NathaPholio</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NathaPholio</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portifolio Page</title>
+	
+	<!-- CSS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+
+	<!-- JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <div id="warningMessage">
-        <h1 class="text-center text-danger">Unfortunately, we support only mobile devices</h1>
-        <p class="text-center text-black">Note:If you really want to see this page enable developer tools in your browser.</p>
-    </div>
-    <div id="page-content">
-        
-        <nav id="navbar">
-            <nav id="navbar-top">
-            <div class="col-xs-12 text-center middle" id="navbar-logo">
-                <h1 id="logo-text" class="logo">Natha<span class="logo thin">Pholio</span></h1>
-            </div>
-        </nav>
-            <div id="collapseButton"><a class="text-center" href="#" data-toggle="collapse" data-target="#collapse-navbar"><i class="fa fa-navicon"></i></a>
-            </div>
-            <div class="collapse" id="collapse-navbar">
-                <div class="navCircle"></div>
-                <ul class="collapse-body" id="collapseMenu">
-                    <a href="#about">
-                        <li class="navbar-item">
-                            <i class="icon fa fa-info-circle"></i>
-                            <span>About</span>
-                        </li>
-                    </a>
-                    <a href="#portifolio">
-                        <li class="navbar-item">
-                            <i class="icon fa fa-briefcase portifolio"></i>
-                            <span>Portifolio</span>
-                        </li>
-                    </a>
-                    <a href="#contact">
-                        <li class="navbar-item">
-                            <i class="icon fa fa-envelope"></i>
-                            <span>Contact</span>
-                        </li>
-                    </a>
-                </ul>
-            </div>
-        </nav>
-        <nav class="navbar navbar-inverse navbar-fixed-top" id="desktop-navbar">
-            <a href="#" clas="navbar-brand"><span class="logo">Natha<span class="thin">Pholio</span></span></a>
-            <ul class="nav navbar-nav navbar-right nav-menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#portifolio">Portifolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			
+			<div class="navbar-header col-md-5">
+				<button id="collapseButton" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Natha<span>Pholio</span></a>
+			</div>
 
+			<ul class="nav navbar-nav navbar-right col-md-3" id="navbarCollapse">
+				<!-- <li><a href="#about">About</a></li> -->
+				<li><a href="#about">Portifolio</a></li>
+				<li><a href="#contact">Contact</a></li
+			</ul>
+		</div>
+	</nav>
+
+	<div class="" id="content">
+		<!-- About from page  -->
+		<section class="about-section" id="about">
+			<h1 class="about-title">Check out my work!</h1>
+			<div class="about-category-wrapper col-xs-12">
+				<a href="#portifolio-design">
+					<div class="category about-design col-xs-12">
+						<img src="assets/pencil.svg" alt="A pencil">
+						<h3 class="category-item-subtitle">Designer</h3>
+					</div>
+				</a>
+				<a href="#portifolio-developer">
+					<div class="category about-developer col-xs-12">
+						<img src="assets/computer.svg" alt="A computer with a lot of programing code">
+						<h3 class="category-item-subtitle">Web Developer</h3>
+					</div>
+				</a>
+			</div>
+		</section>
+
+		<!-- Portifolio section -->
+		<section class="section" id="portifolio">
+			<div class="showcases-carousels">
+				<div class="clearfix"></div>
+
+				<!-- Design showcase -->
+				<div id="portifolio-design" class="carousel slide" data-ride="carousel">
+					
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#portifolio-design" data-slide-to="0" class="active"></li>
+						<li data-target="#portifolio-design" data-slide-to="1"></li>
+						<li data-target="#portifolio-design" data-slide-to="2"></li>
+					</ol>
+
+					<!-- Wrappers -->
+					<div class="carousel-inner">
+
+						<div class="item active">
+							<img src="https://placehold.it/768x1024" alt="An 768x1024 image placeholder">
+							<h3 class="text-center item-subtitle">Coming soon</h3>
+
+						</div>
+
+						<div class="item">
+							<img src="https://placehold.it/768x1024" alt="An 768x1024 image placeholder">
+							<h3 class="text-center item-subtitle">Coming soon</h3>
+						</div>
+
+						<div class="item">
+							<img src="https://placehold.it/768x1024" alt="An 768x1024 image placeholder">
+							<h3 class="text-center item-subtitle">Coming soon</h3>
+						</div>
+					</div>
+					
+					<!-- Next and Previous indicators -->
+					<a href="#portifolio-design" class="left carousel-control" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a href="#portifolio-design" class="right carousel-control" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+
+				<div class="clearfix" style=""></div>
+				<!-- Developer showcase -->
+				<div id="portifolio-developer" class="carousel slide" data-ride="carousel">
+
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#portifolio-developer" data-slide="0" class="active"></li>
+						<li data-target="#portifolio-developer" data-slide="1"></li>
+						<li data-target="#portifolio-developer" data-slide="2"></li>
+					</ol>
+
+					<!-- Wrappers -->
+					<div class="carousel-inner">
+						
+						<div class="item active">
+							<img src="https://placehold.it/768x1024/444/000" alt="An 768x1024 image placeholder">
+							<h3 class="text-center item-subtitle">Coming soon</h3>
+						</div>
+
+						<div class="item">
+							<img src="https://placehold.it/768x1024/444/000" alt="An 768x1024 image placeholder">
+							<h3 class="text-center item-subtitle">Coming soon</h3>
+						</div>
+
+						<div class="item">
+							<img src="https://placehold.it/768x1024/444/000" alt="An 768x1024 image placeholder">
+							<h3 class="text-center item-subtitle">Coming soon</h3>
+						</div>
+					</div>
+					
+
+					<!-- Next and Previous indicators -->
+					<a href="#portifolio-developer" class="left carousel-control" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+
+					<a href="#portifolio-developer" class="right carousel-control" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact section -->
+		<section class="section" id="contact">
+			<div class="col-xs-12 col-md-6 social-networks container">
+			<div class="col-xs-12">
+				<h2 class="text-center text-default">Did you like my work? Follow me</h2>
+			</div>
+
+			<div>
+				<a class="col-xs-4 social-network-icon" href="http://codepen.io/nathabonfim59/">
+					<span>
+						<i class="fa fa-codepen"></i>
+					</span>
+				</a>
+				<a class="col-xs-4 social-network-icon" href="https://www.freecodecamp.com/nathabonfim59">
+					<span>
+						<i class="fa fa-free-code-camp"></i>
+					</span>
+				</a>
+				<a class="col-xs-4 social-network-icon" href="https://github.com/nathabonfim59">
+					<span>
+						<i class="fa fa-github"></i>
+					</span>
+				</a>
+			</div>
+			</div>
+
+			<div class="col-xs-12 col-md-6 contact-form">
+				<a href="https://gitter.im/nathabonfim59" target="_blank">
+					<button class="contact-button">
+						Contact me
+					</button>
+				</a>
+			</div>
+		</section>
+		<footer class="col-xs-12 footer">Copyright © 2017 nathabonfim59</footer>
+	</div>
+	<!-- Scripts imports -->
+	<script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
 </html>

@@ -1,0 +1,252 @@
+* {
+	outline: 0;
+}
+
+
+/*
+body {
+	background-color: #162b44;
+}*/
+
+.navbar-inverse {
+	background-color: #001326 !important;
+	border-color: #001326 !important;
+}
+
+.navbar-brand {
+	color: white !important;
+	font-size: 35px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+}
+
+.navbar-brand span {
+	font-weight: 100;
+}
+
+.text-default {
+	color: #fff;
+}
+/*Content CSS*/
+#content {
+	padding-top: 30px;
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+
+/*About Section*/
+.about-section {
+	background-color: #162B44;
+	padding-top: 15px;
+	color: #fff;
+}
+
+.about-title {
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	text-align: center;
+}
+
+.about-category-wrapper {
+	height: 400px;
+	margin-top: -10px;
+	padding-top: 20px;
+	text-align: center;
+	background-color: #162B44;
+}
+
+.category {
+	height: 200px;
+}
+
+.category-item-subtitle {
+	font-weight: 200;
+}
+
+.about-design {
+	/*background-color: red;*/
+	color: #337AB7;
+}
+
+.about-design:hover {
+	color: #62AADB;
+}
+
+.about-developer {
+	/*background-color: green;*/
+	color: #90b3db;
+}
+
+.about-developer:hover {
+	color: white;
+}
+
+.about-developer img {
+	margin-top: -25px;
+	height: 150px;
+	width: 150px;
+}
+
+.about-developer .category-item-subtitle {
+	margin-top: -10px;
+}
+
+
+/*Carousels Setup*/
+
+.carousel {
+	height: 94vh;
+}
+
+
+/*Portifolio section*/
+
+.portifolio-image {
+
+}
+
+.item {
+	background-size: cover;
+	background-position: 50% 50%;
+	width: 100%;
+	height: 100%;
+}
+
+
+/*Carousel CSS*/
+
+.carousel, .item img {
+	margin: 0 auto;
+  	width: 100% auto;
+}
+.item img {
+  	height: 94vh !important;
+}
+
+.item .item-subtitle {
+	top: 0;
+	width: 100% !important;
+	position: absolute;
+}
+
+.carousel-indicators li {
+	background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-indicators .active {
+	background-color: #444545 !important;
+	border-color: #fff;
+}
+
+/* ->> Design showcase   */
+#portifolio-design {
+	background-color: #333;
+	color: white;
+}
+
+#portifolio-design .carousel-indicators li {
+	border-color: black;
+	background-color: rgba(255, 255, 255, .1);
+}
+
+#portifolio-design .item-subtitle {
+	color: #000;
+}
+
+/* ->> Developer showcase   */
+#portifolio-developer .item-subtitle {
+	/*display: none;*/
+	color: #fff;
+}
+
+#portifolio-developer .carousel-indicators .active {
+	background-color: rgba(255, 255, 255, .2) !important;
+}
+
+/*Contact CSS*/
+
+#contact {
+	height: 300px;
+	background-color: #3C5470;
+}
+
+/*social networks*/
+#contact .social-networks {
+	z-index: 1;
+	height: 100px;
+	margin-top: 55px;
+}
+
+.social-network-icon {
+	padding-top: 25px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	height: 90px;
+	margin-left: 0;
+	margin-right: 0;
+	border-radius: 35px;
+	text-align: center;
+	font-size: 60px;
+}
+
+.social-network-icon span {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height: 80px;
+}
+
+.social-network-icon span i {
+	color: #fff;
+}
+
+.social-network-icon .fa-codepen:hover {
+	color: #61B4C6;
+}
+
+.social-network-icon .fa-free-code-camp:hover {
+	color: #47CF73;
+}
+
+.social-network-icon .fa-github:hover {
+	color: #A2A6AB;
+}
+
+
+/*Contact button*/
+
+.contact-form {
+	background-color: #3C5470;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	/*background-color: black;*/
+	height: 100px;
+	text-align: center;
+}
+
+.contact-button {
+	background-color: rgba(0, 0, 0, 0);
+	color: white;
+	border-style: solid;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	height: 70px;
+	width: 270px;
+	border-radius: 50px;
+	font-size: 35px;
+}
+
+.contact-button:hover {
+	background-color: #fff;
+	color: #3C5470;
+	transition: background, color .6s;
+}
+
+
+/*Footer*/
+.footer {
+	text-align: center;
+	color: white;
+	background-color: #001326;
+	padding-top: 14px;
+	height: 50px;
+}
