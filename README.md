@@ -3,10 +3,10 @@
 
 I have used some technology to build that:
 
-HTML5 at all,
-JQuery
-Bootstrap
-And a lot of code ;)
+-HTML5
+-JQuery
+-Bootstrap
+-And a lot of code ;)
 
 
 # Licence
